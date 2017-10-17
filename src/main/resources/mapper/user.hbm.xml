@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.UserBean" table="user_tb">
+        <id name="userId" column="user_id" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="userPassword" column="user_password" type="java.lang.String"/>
+        <property name="userTel" column="user_tel" type="java.lang.String"/>
+        <property name="userEmail" column="user_email" type="java.lang.String"/>
+        <property name="userNickname" column="user_nickname" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>
